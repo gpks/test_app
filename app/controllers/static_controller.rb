@@ -4,5 +4,6 @@ class StaticController < ApplicationController
 
   
   def index
+    @posts = Post.where(:visible => true).sort { |x,y| x.created_at <=> y.created_at }
   end
 end

@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
 protected
   def set_visible_to_false
     self.visible = false
-    
+
   end
   
 end
